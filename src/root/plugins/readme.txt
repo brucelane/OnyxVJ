@@ -1,0 +1,1 @@
+disable plugins by renaming them with -disabled (i.e. BasePlugins-disabled.swf)

@@ -1,0 +1,128 @@
+<settings>
+
+	<metadata>
+		<version>4.4.0</version>
+	</metadata>
+
+	<!-- CORE SETTINGS FOR RENDERING -->
+	<core>
+
+		<render>
+			<!-- the width / height of bitmaps -->
+			<bitmapData>
+				<width>480</width>
+				<height>360</height>
+			</bitmapData>
+		</render>
+		
+		<!-- custom ordering of blendmodes for blendmode controls -->
+		<blendModes>
+			<normal/>
+			<lighten/>
+			<darken/>
+			<overlay/>
+			<hardlight/>
+			<multiply/>
+			<screen/>
+			<add/>
+			<subtract/>
+			<difference/>
+			<invert/>
+		</blendModes>
+
+		<cameras>
+			<camera>
+				<name>DEFAULT</name>
+				<width>320</width>
+				<height>240</height>
+				<frameRate>30</frameRate>
+			</camera>
+			<!--	ADD MORE CAMERAS IF YOUR CAMERA DOES NOT SUPPORT DEFAULT SIZES
+				(IF YOU HAVE AN HD CAPTURE CARD)
+			<camera>
+				<name>Avermedia Camera</name>
+				<width>640</width>
+				<height>480</height>
+				<frameRate>29.97</frameRate>
+			</camera>
+			-->
+		</cameras>
+    	<videopong>
+			<login>null</login>
+			<pwd>null</pwd>
+			<domain>https://www.videopong.net</domain>
+			<appkey>onyxair</appkey>
+		</videopong>
+		
+	</core>
+	
+	<!-- UI STATES -->
+	<ui>
+		
+		<!-- COLOR SWATCH SETTINGS -->
+		<swatch>
+			<color>0x000000</color>
+			<color>0x1c1c1c</color>
+			<color>0x383838</color>
+			<color>0x555555</color>
+			<color>0x717171</color>
+			<color>0x8d8d8d</color>
+			<color>0xaaaaaa</color>
+			<color>0xc6c6c6</color>
+			<color>0xe2e2e2</color>
+			<color>0xffffff</color>
+		</swatch>
+		
+		<keys>
+
+			<!-- BASE UI MACROS -->
+			<key code="37">SELECTLAYERPREVIOUS</key>
+			<key code="39">SELECTLAYERNEXT</key>
+			<key code="49">SELECTLAYER0</key>
+			<key code="50">SELECTLAYER1</key>
+			<key code="51">SELECTLAYER2</key>
+			<key code="52">SELECTLAYER3</key>
+			<key code="53">SELECTLAYER4</key>
+			<key code="81">SELECTPAGE0</key>
+			<key code="87">SELECTPAGE1</key>
+			<key code="69">SELECTPAGE2</key>
+			<key code="38">SELECTFILTERUP</key>
+			<key code="40">SELECTFILTERDOWN</key>
+			
+			<key code="65">DISPLAYFADE</key>
+			<key code="83">DISPLAYFADECHOPDOWN</key>
+			<key code="68">DISPLAYFADECHOPUP</key>
+			<key code="70">DISPLAYFADEMULTIPLY</key>
+			<key code="71">DISPLAYFADESCREEN</key>
+			
+			<key code="90">MUTELAYER0</key>
+			<key code="88">MUTELAYER1</key>
+			<key code="67">MUTELAYER2</key>
+			<key code="86">MUTELAYER3</key>
+			<key code="66">MUTELAYER4</key>
+
+			<key code="188">CYCLEBLENDUP</key>
+			<key code="190">CYCLEBLENDDOWN</key>
+			<key code="191">RESETLAYER</key>
+
+			<!-- CUSTOM MACROS -->
+			<key code="112">ECHO DISPLAY</key>
+			<key code="113">SLOW DOWN LAYERS</key>
+			<key code="114">SPEED UP LAYERS</key>
+			<key code="115">BUFFER DISPLAY</key>
+			<key code="116">RANDOM BLEND</key>
+			<key code="117">RANDOM MOVESCALE</key>
+			<key code="118">RANDOM 3DDISTORT</key>
+			<key code="119">RANDOM 3DDISTORT2</key>
+			<key code="120">RANDOM FRAMERATE</key>
+			<key code="122">RANDOM FRAME</key>
+			<key code="123">RESETALL</key>
+			
+			<key code="73">FRAMERATE DECREASE</key>
+			<key code="79">FRAMERATE INCREASE</key>
+			<key code="80">RESETALLFRAMERATE</key>
+
+		</keys>
+		
+	</ui>
+</settings>

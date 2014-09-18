@@ -1,0 +1,109 @@
+<settings>
+  <metadata>
+    <version>4.4.0</version>
+  </metadata>
+  <core>
+    <render>
+      <bitmapData>
+        <width>320</width>
+        <height>240</height>
+      </bitmapData>
+    </render>
+    <blendModes>
+      <normal/>
+      <lighten/>
+      <darken/>
+      <overlay/>
+      <hardlight/>
+      <multiply/>
+      <screen/>
+      <add/>
+      <subtract/>
+      <difference/>
+      <invert/>
+    </blendModes>
+    <cameras>
+      <camera>
+        <name>DEFAULT</name>
+        <width>320</width>
+        <height>240</height>
+        <fps>0</fps>
+      </camera>
+    </cameras>
+    <videopong>
+      <login>null</login>
+      <pwd>null</pwd>
+      <domain>https://www.videopong.net</domain>
+      <appkey>onyxair</appkey>
+    </videopong>
+  </core>
+  <ui>
+    <swatch>
+      <color>0x0</color>
+      <color>0x1c1c1c</color>
+      <color>0x383838</color>
+      <color>0x555555</color>
+      <color>0x717171</color>
+      <color>0x8d8d8d</color>
+      <color>0xaaaaaa</color>
+      <color>0xc6c6c6</color>
+      <color>0xe2e2e2</color>
+      <color>0xffffff</color>
+    </swatch>
+    <keys>
+      <key code="66">MUTELAYER4</key>
+      <key code="67">MUTELAYER2</key>
+      <key code="68">DISPLAYFADECHOPUP</key>
+      <key code="69">SELECTPAGE2</key>
+      <key code="70">DISPLAYFADEMULTIPLY</key>
+      <key code="71">DISPLAYFADESCREEN</key>
+      <key code="73">FRAMERATE DECREASE</key>
+      <key code="122">RANDOM FRAME</key>
+      <key code="123">RESETALL</key>
+      <key code="79">FRAMERATE INCREASE</key>
+      <key code="80">RESETALLFRAMERATE</key>
+      <key code="81">SELECTPAGE0</key>
+      <key code="83">DISPLAYFADECHOPDOWN</key>
+      <key code="86">MUTELAYER3</key>
+      <key code="87">SELECTPAGE1</key>
+      <key code="88">MUTELAYER1</key>
+      <key code="90">MUTELAYER0</key>
+      <key code="37">SELECTLAYERPREVIOUS</key>
+      <key code="52">SELECTLAYER3</key>
+      <key code="39">SELECTLAYERNEXT</key>
+      <key code="112">ECHO DISPLAY</key>
+      <key code="113">SLOW DOWN LAYERS</key>
+      <key code="50">SELECTLAYER1</key>
+      <key code="51">SELECTLAYER2</key>
+      <key code="116">RANDOM BLEND</key>
+      <key code="53">SELECTLAYER4</key>
+      <key code="118">RANDOM 3DDISTORT</key>
+      <key code="119">RANDOM 3DDISTORT2</key>
+      <key code="120">RANDOM FRAMERATE</key>
+      <key code="49">SELECTLAYER0</key>
+      <key code="114">SPEED UP LAYERS</key>
+      <key code="115">BUFFER DISPLAY</key>
+      <key code="188">CYCLEBLENDUP</key>
+      <key code="117">RANDOM MOVESCALE</key>
+      <key code="190">CYCLEBLENDDOWN</key>
+      <key code="191">RESETLAYER</key>
+    </keys>
+    <windows>
+      <state name="DEFAULT">
+        <window name="FILE BROWSER" x="6" y="345" enabled="true"/>
+        <window name="FILTERS" x="518" y="345" enabled="true"/>
+        <window name="LAYERS" x="6" y="6" enabled="true"/>
+        <window name="KEY MAPPING" x="615" y="319" enabled="false"/>
+        <window name="DISPLAY" x="518" y="565" enabled="true"/>
+        <window name="CONSOLE" x="6" y="565" enabled="true"/>
+        <window name="SETTINGS" x="200" y="565" enabled="true"/>
+        <window name="MIDI" x="269" y="565" enabled="false"/>
+        <window name="VIDEOPONG" x="360" y="565" enabled="true"/>
+        <window name="RECORDER" x="7" y="756" enabled="true"/>
+        <window name="PREVIEW" x="767" y="325" enabled="true"/>
+        <window name="PERFORMANCE" x="0" y="0" enabled="false"/>
+        <window name="FLVRECORDER" x="102" y="101" enabled="false"/>
+      </state>
+    </windows>
+  </ui>
+</settings>
