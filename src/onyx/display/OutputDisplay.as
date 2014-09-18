@@ -1,8 +1,9 @@
 /**
- * Copyright (c) 2003-2008 "Onyx-VJ Team" which is comprised of:
+ * Copyright (c) 2003-2014 "Onyx-VJ Team" which is comprised of:
  *
  * Daniel Hai
  * Stefano Cottafavi
+ * Bruce Lane
  *
  * All rights reserved.
  *
@@ -28,6 +29,8 @@ package onyx.display {
 	import onyx.plugin.*;
 	import onyx.utils.array.*;
 	
+	import benkuper.nativeExtensions.Spout;
+	
 	use namespace onyx_ns;
 	
 	/**
@@ -35,6 +38,10 @@ package onyx.display {
 	 */
 	final public class OutputDisplay extends Sprite implements IDisplay 
 	{
+		//spout sender
+		private var spout:Spout;
+		private var sendName:String = "OnyxVJ Sender";
+
 		/**
 		 * 	@private
 		 */
@@ -198,7 +205,11 @@ package onyx.display {
 			// lock bitmaps
 			_channelA.lock();
 			_channelB.lock();
-
+			
+			// spout
+			spout = new Spout();
+			var createResult:Boolean = spout.extContext.call("createSender", sendName, data.width, data.height) as Boolean;
+			trace("createSender result :", createResult);
 		}
 		
 		/**
@@ -633,6 +644,7 @@ package onyx.display {
 			
 			// unlock
 			data.unlock();
+			spout.extContext.call("sendTexture", sendName, data);
 			data.lock();
 			channelA.unlock();
 			channelA.lock();
