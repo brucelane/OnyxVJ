@@ -8,7 +8,7 @@
 
 :: Your certificate information
 set CERT_NAME="OnyxVJ"
-set CERT_PASS=fd
+set CERT_PASS=password
 set CERT_FILE="bat\OnyxVJ.p12"
 set SIGNING_OPTIONS=-storetype pkcs12 -keystore %CERT_FILE% -storepass %CERT_PASS%
 
